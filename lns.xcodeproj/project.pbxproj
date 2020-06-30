@@ -12,7 +12,6 @@
 		8E0CC3792473822E008B5432 /* lns in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8E0CC36C247381A3008B5432 /* lns */; };
 		8E0CC37B247382D2008B5432 /* Linker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CC37A247382D2008B5432 /* Linker.swift */; };
 		8E0CC37D24738321008B5432 /* RuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CC37C24738321008B5432 /* RuntimeError.swift */; };
-		8E1245B02489E1120056CE3F /* lnsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1245AE2489E10B0056CE3F /* lnsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,9 +32,6 @@
 		8E0CC36F247381A3008B5432 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8E0CC37A247382D2008B5432 /* Linker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Linker.swift; sourceTree = "<group>"; };
 		8E0CC37C24738321008B5432 /* RuntimeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeError.swift; sourceTree = "<group>"; };
-		8E1245A62489C3250056CE3F /* lnsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lnsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E1245AA2489C3250056CE3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E1245AE2489E10B0056CE3F /* lnsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = lnsTests.swift; path = Tests/lnsTests/lnsTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,13 +43,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E1245A32489C3250056CE3F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				8E0CC36E247381A3008B5432 /* lns */,
-				8E1245A72489C3250056CE3F /* lnstests */,
 				8E0CC36D247381A3008B5432 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				8E0CC36C247381A3008B5432 /* lns */,
-				8E1245A62489C3250056CE3F /* lnsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,15 +70,6 @@
 				8E0CC37C24738321008B5432 /* RuntimeError.swift */,
 			);
 			path = lns;
-			sourceTree = "<group>";
-		};
-		8E1245A72489C3250056CE3F /* lnstests */ = {
-			isa = PBXGroup;
-			children = (
-				8E1245AE2489E10B0056CE3F /* lnsTests.swift */,
-				8E1245AA2489C3250056CE3F /* Info.plist */,
-			);
-			path = lnstests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,23 +95,6 @@
 			productReference = 8E0CC36C247381A3008B5432 /* lns */;
 			productType = "com.apple.product-type.tool";
 		};
-		8E1245A52489C3250056CE3F /* lnsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8E1245AD2489C3250056CE3F /* Build configuration list for PBXNativeTarget "lnsTests" */;
-			buildPhases = (
-				8E1245A22489C3250056CE3F /* Sources */,
-				8E1245A32489C3250056CE3F /* Frameworks */,
-				8E1245A42489C3250056CE3F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = lnsTests;
-			productName = lnstests;
-			productReference = 8E1245A62489C3250056CE3F /* lnsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,9 +107,6 @@
 				TargetAttributes = {
 					8E0CC36B247381A3008B5432 = {
 						CreatedOnToolsVersion = 11.4.1;
-					};
-					8E1245A52489C3250056CE3F = {
-						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -169,20 +127,9 @@
 			projectRoot = "";
 			targets = (
 				8E0CC36B247381A3008B5432 /* lns */,
-				8E1245A52489C3250056CE3F /* lnsTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		8E1245A42489C3250056CE3F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E0CC368247381A3008B5432 /* Sources */ = {
@@ -192,14 +139,6 @@
 				8E0CC37D24738321008B5432 /* RuntimeError.swift in Sources */,
 				8E0CC37B247382D2008B5432 /* Linker.swift in Sources */,
 				8E0CC370247381A3008B5432 /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E1245A22489C3250056CE3F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E1245B02489E1120056CE3F /* lnsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,42 +282,6 @@
 			};
 			name = Release;
 		};
-		8E1245AB2489C3250056CE3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2W4DVPEQ39;
-				INFOPLIST_FILE = lnstests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sadun.lnstests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		8E1245AC2489C3250056CE3F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 2W4DVPEQ39;
-				INFOPLIST_FILE = lnstests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sadun.lnstests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -396,15 +299,6 @@
 			buildConfigurations = (
 				8E0CC374247381A3008B5432 /* Debug */,
 				8E0CC375247381A3008B5432 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8E1245AD2489C3250056CE3F /* Build configuration list for PBXNativeTarget "lnsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8E1245AB2489C3250056CE3F /* Debug */,
-				8E1245AC2489C3250056CE3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
